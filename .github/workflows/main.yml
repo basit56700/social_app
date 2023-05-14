@@ -42,8 +42,8 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker tag your-docker-image-name your-docker-hub-username/your-docker-image-name
-          docker push your-docker-hub-username/your-docker-image-name
+          docker tag social_app basit56700/social_app
+          docker push basit56700/social_app
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
